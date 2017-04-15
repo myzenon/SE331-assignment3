@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active:
+      - development
+      - inMemoryDB
+---
+spring:
+  profiles: development
+image:
+  urlPath: 'http://localhost:8080/product/image/'
+  dirPath: 'D:\images\'
+---
+spring:
+  profiles: deploy
+image:
+  urlPath: 'http://localhost:8080/product/image/'
+  dirPath: 'D:\images\'
+---
+spring:
+  profiles: inMemoryDB
+  datasource:
+    url: jdbc:h2:mem:onlineshop;DB_CLOSE_DELAY=- 1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
