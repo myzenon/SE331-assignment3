@@ -13,8 +13,8 @@ image:
 spring:
   profiles: deploy
 image:
-  urlPath: 'http://localhost:8080/product/image/'
-  dirPath: 'D:\images\'
+  urlPath: 'http://54.245.217.104:8080/onlineshop/product/image/'
+  dirPath: '~/images/'
 ---
 spring:
   profiles: inMemoryDB
