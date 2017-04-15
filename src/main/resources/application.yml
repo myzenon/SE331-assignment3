@@ -11,10 +11,10 @@ image:
   dirPath: 'D:\images\'
 ---
 spring:
-  profiles: deploy
+  profiles: deployment
 image:
   urlPath: 'http://54.245.217.104:8080/onlineshop/product/image/'
-  dirPath: '~/images/'
+  dirPath: '/home/ubuntu/images/'
 ---
 spring:
   profiles: inMemoryDB

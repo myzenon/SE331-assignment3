@@ -12,7 +12,6 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @RequiredArgsConstructor
-//@AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Builder
 public class Product {
